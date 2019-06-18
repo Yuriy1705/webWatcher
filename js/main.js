@@ -40,25 +40,25 @@ function addZero(v) {
 function setBackgroun(hours) {
     
     if(hours >= 22 && hours < 6) {
-        document.body.style.backgroundImage = "url('../img/night-backdround.jpg')";
+        document.body.style.backgroundImage = "url('./img/night-backdround.jpg')";
         document.body.style.color = "white";
         greeting.innerHTML = "Good Night";
     } else if(hours >= 6 && hours < 12) {
-        document.body.style.backgroundImage = "url('../img/morning-background.jpg')"; 
+        document.body.style.backgroundImage = "url('./img/morning-background.jpg')"; 
         document.body.style.color = "black";
         greeting.innerHTML = "Good Morning";
     } else if(hours >= 12 && hours < 18) {
-        document.body.style.backgroundImage = "url('../img/afternoon-background.jpg')";
+        document.body.style.backgroundImage = "url('./img/afternoon-background.jpg')";
         document.body.style.color = "black";
         greeting.innerHTML = "Good Afternoon";
     } else if(hours >= 18 && hours < 22) {
-        document.body.style.backgroundImage = "url('../img/evening-background.jpg')";
+        document.body.style.backgroundImage = "url('./img/evening-background.jpg')";
         document.body.style.color = "#0000ff";
         greeting.innerHTML = "Good Evening";
     }
     
 }
-
+// Work with local storage
 function getName() {
     if(localStorage.getItem('name') === null) {
         name.textContent = '[Enter your Name]';
@@ -99,6 +99,7 @@ function setFocus(e) {
     } 
 }
 
+// Add listeners
 name.addEventListener('keypress', setName);
 name.addEventListener('blur', setName);
 
