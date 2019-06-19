@@ -49,7 +49,7 @@ function setBackgroun(hours) {
         greeting.innerHTML = "Good Morning";
     } else if(hours >= 12 && hours < 18) {
         document.body.style.backgroundImage = "url('./img/afternoon-background.jpg')";
-        document.body.style.color = "black";
+        document.body.style.color = "#E30101";
         greeting.innerHTML = "Good Afternoon";
     } else if(hours >= 18 && hours < 22) {
         document.body.style.backgroundImage = "url('./img/evening-background.jpg')";
